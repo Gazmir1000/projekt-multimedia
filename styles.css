@@ -158,9 +158,10 @@ body {
   height: 70px;
   width: 100%;
   position: absolute;
-  bottom: -300vh;
+  bottom: -350vh;
   left: 0;
-  background-color: orange;
+  background-color: DarkTurquoise;
+
   display: flex;
   flex-direction: column;
   align-items: center;
