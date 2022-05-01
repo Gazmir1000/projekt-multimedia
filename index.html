@@ -16,14 +16,62 @@
   <body>
     <div class="container">
       <div class="nav">
-       <div>Logoja jone</div>
-        <ul class="nav-ul">
-          <li class="nav-li">Page 1</li>
-          <li class="nav-li">Page 2</li>
-          <li class="nav-li">Page 3</li>
-        </ul>
+       <img src="./images/logo.png" height="80" style="border-radius: 50%;" alt="Logoja">
+       <ul class="nav-ul">
+        <a style="text-decoration: none; color: white" href="index.html"
+          ><li id="home-nav" class="nav-li">Home</li></a
+        >
+        <a style="text-decoration: none; color: white" href="about.html">
+          <li id="about-nav"  class="nav-li">About Us</li></a
+        >
+        <a style="text-decoration: none; color: white" href="services.html"
+          ><li id="services-nav"  class="nav-li">Services</li></a
+        >
+        <a style="text-decoration: none; color: white" href="contact.html"
+          ><li id="contact-nav"  class="nav-li">Contact Us</li></a
+        >
+      </ul>
       </div>
     </div>
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+
+    <img class="carusel-img" src="./images/eagle.jpg" >
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text">Caption Two</div>
+  <img class="carusel-img" src="./images/koala.jpg" >
+
+  </div>
+
+  <div class="mySlides fade" style="display: flex;">
+ 
+    <img class="carusel-img" src="./images/polar-bear.jpg" >
+    <div  class="text">Caption Three</div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+
+</div>
+
     
     <div class="info">
 
@@ -33,9 +81,8 @@
         mi eveniet hic! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quidem, quos ipsum labore quam esse quis perferendis nem
         o rerum adipisci voluptate, ullam, iusto officia fugit porro dolores accusantium sunt cupiditate?</div>
       <div class="right-info">
-
-        <div><img style="border-radius: 5px;" src="https://i.guim.co.uk/img/media/673430fc76ce45882191cbae443d2e401387d751/0_66_5992_3596/master/5992.jpg?width=1200&quality=85&auto=format&fit=max&s=c963a36cd5440dcc27179f669fe2948a"
-         alt="panda" width="500px">
+        <div><img style="border-radius: 5px;max-width: 500px;" src="https://i.guim.co.uk/img/media/673430fc76ce45882191cbae443d2e401387d751/0_66_5992_3596/master/5992.jpg?width=1200&quality=85&auto=format&fit=max&s=c963a36cd5440dcc27179f669fe2948a"
+         alt="panda" >
          </div>
          <div style="height: 300px;">
           <button class="scroll">Go down</button>
@@ -53,8 +100,8 @@
         o rerum adipisci voluptate, ullam, iusto officia fugit porro dolores accusantium sunt cupiditate?</div>
       <div class="right-info">
 
-        <div><img style="border-radius: 5px;" src="https://img.etimg.com/thumb/msid-60988845,width-1200,height-900,imgsize-99562,overlay-economictimes/photo.jpg"
-         alt="panda" width="500px">
+        <div><img style="border-radius: 5px;max-width: 500px;" src="https://img.etimg.com/thumb/msid-60988845,width-1200,height-900,imgsize-99562,overlay-economictimes/photo.jpg"
+         alt="panda" >
          </div>
          <div style="height: 300px;">
           <button class="scroll">Go down</button>
@@ -71,8 +118,8 @@
         o rerum adipisci voluptate, ullam, iusto officia fugit porro dolores accusantium sunt cupiditate?</div>
       <div class="right-info">
 
-        <div><img style="border-radius: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGnzkQwEHydMPsBTzCeC2nMrJB3k5proapcg&usqp=CAU"
-         alt="panda" width="500px">
+        <div><img style="border-radius: 5px;max-width: 500px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGnzkQwEHydMPsBTzCeC2nMrJB3k5proapcg&usqp=CAU"
+         alt="panda" >
          </div>
          <div style="height: 300px;">
           <button class="scroll">Go down</button>
@@ -80,22 +127,26 @@
          </div>
 
     </div>
-    
 
   
-    <div class="first">
-      <p>faqja jone e bukur si dikush</p>
-      <p>
-        uje me vitamina me molle po eshte e ngrohte, tsjell gote me akull, ok
-        <p>me hoqe trurin, boll mer boll</p>
-        <p>ja prit sa tpi icik uje</p>
-        <p>mo mprek mo burr, mfal sprek mo</p>
-      </p>
+    <div style="width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
+    <h2>The location of our office</h2>
+    <div id="map"></div>
     </div>
+
+  
+
+    
+
     <footer class="footer">
       <h5 style="margin: 0;">Created by: Gazmir Feimi , Soana Brahja , Sonora Palla</h6>
       <div style="margin-top: 4px;">© All Rights Reserved </div>
     </footer>
   </body>
 <script src="index.js"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQtZ8lzl7p9VVXiSHb0LFbvE_8NO8gTtA&callback=initMap&v=weekly"
+      defer
+    ></script>
+
 </html>
