@@ -57,3 +57,7 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+function onSubmit() {
+  alert("Form submited successfuly ;)");
+}
