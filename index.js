@@ -16,6 +16,10 @@ function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
+setInterval(() => {
+  plusSlides(1);
+}, 6000);
+
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
